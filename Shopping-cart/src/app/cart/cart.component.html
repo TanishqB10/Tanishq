@@ -1,0 +1,28 @@
+<div class="wallet-box">
+  <h3>Your Balance</h3>
+  <div class="wallet-balance">
+    ${{ walletBalance }}
+  </div>
+</div>
+
+<div class="cart-container">
+  <h3 class="cart-items">Items in Cart</h3>
+
+  <ul>
+    <li *ngFor="let item of cartItems; let i = index">
+      <div class="item-left">
+        {{ item.name }} - ${{ item.price }}
+      </div>
+      <div class="item-right">
+        <button class="remove-btn" (click)="removeItem(i)">Remove</button>
+      </div>
+    </li>
+  </ul>
+
+  <div class="cart-total">
+    <strong>Total:</strong> ${{ getTotal() }}
+  </div>
+  <div class="action">
+    <button class="checkout-btn" (click)="checkout()" [disabled]="cartItems.length === 0">Checkout</button>
+  </div>
+</div>

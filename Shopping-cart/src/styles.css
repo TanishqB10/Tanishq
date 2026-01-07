@@ -1,0 +1,27 @@
+/* Global variables and base styles */
+:root {
+  --primary: #2b6cb0;
+  --accent: #ffb703;
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --muted: #6b7280;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: #111827;
+  -webkit-font-smoothing:antialiased;
+}
+
+a { color: var(--primary); text-decoration: none; }
+
+/* Utility helpers */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+/* Small responsive tweaks */
+@media (max-width: 600px) {
+  .search-box input { width: 160px; }
+} 

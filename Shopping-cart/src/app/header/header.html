@@ -1,0 +1,14 @@
+<nav class="nav">
+  <div class="container nav-inner">
+    <h1>{{ title }}</h1>
+    <div class="nav-actions">
+      <a routerLink="/wallet" class="wallet-btn">💰 Wallet <span class="balance">${{ (cartService.wallet$ | async) }}</span></a>
+      <a routerLink="/cart" class="cart-btn">🛒 Cart <span class="count">{{ (cartService.cartCount$ | async) }}</span></a>
+    </div>
+  </div>
+</nav>
+
+<div class="search-box">
+  <input type="text" placeholder="Search products" />
+  <button>🔍</button>
+</div>
