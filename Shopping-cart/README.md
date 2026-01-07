@@ -1,59 +1,88 @@
-# ShoppingCart
+# Shopping Cart System using Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+This project is a front-end web application developed using **Angular** that simulates an online shopping cart system. It allows users to browse products, add them to a cart, manage wallet balance, and complete a checkout process. The project focuses on understanding Angular components, services, routing, and state management.
 
-## Development server
 
-To start a local development server, run:
+## 📌 Project Features
 
-```bash
-ng serve
-```
+- Product listing with images and prices
+- Add to Cart functionality
+- Remove items from cart
+- Wallet balance management
+- Checkout with balance validation
+- Real-time cart and wallet updates
+- Smooth navigation using Angular Routing
+- Responsive and user-friendly UI
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## 🛠️ Technologies Used
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Angular**
+- **TypeScript**
+- **HTML5**
+- **CSS3**
+- **RxJS**
+- **Git & GitHub**
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## 🧩 Project Structure
+Shopping-cart/
+│
+├── src/
+│ ├── app/
+│ │ ├── home/
+│ │ ├── cart/
+│ │ ├── wallet/
+│ │ ├── header/
+│ │ └── services/
+│ │ └── cart.service.ts
+│
+├── image/
+├── package.json
+└── angular.json
 
-## Building
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## ⚙️ Core Functionality
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Add to Cart
+- Checks wallet balance before adding items
+- Updates cart count in real time
+- Uses shared CartService for state management
 
-## Running unit tests
+### Wallet System
+- Initial balance is assigned
+- Balance updates automatically after checkout
+- Prevents purchase if balance is insufficient
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### Checkout
+- Calculates total cart value
+- Deducts amount from wallet
+- Clears cart after successful purchase
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 📸 Screenshots
 
-For end-to-end (e2e) testing, run:
+Screenshots of the application interface (Home Page, Cart Page, Wallet Page, Checkout) are included in the project report.
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🎯 Project Objective
 
-## Additional Resources
+The main objective of this project is to understand the implementation of a shopping cart system using Angular and to gain hands-on experience with component interaction, services, observables, and routing.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 👨‍🎓 Developed By
+
+**Tanishq**  
+Student Project – Angular Front-End Development
+
+---
+
+## 📎 GitHub Repository
+
+https://github.com/TanishqB10/Tanishq
